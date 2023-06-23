@@ -1,16 +1,12 @@
 [
-{
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "",
-  "authorList": ["CleanroomMC"],
-  "credits": "Authors of this project",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
-}
+  {
+    "modid": "inhibited",
+    "name": "Inhibited",
+    "description": "Inhibits player abilities through one simple effect!",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "https://github.com/ACGaming/Inhibited",
+    "authorList": ["ACGaming"],
+    "credits": "CleanroomMC"
+  }
 ]
