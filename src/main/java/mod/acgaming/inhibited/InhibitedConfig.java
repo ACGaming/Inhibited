@@ -43,6 +43,10 @@ public class InhibitedConfig
         })
     public static EnumLists blockPlacingListMode = EnumLists.WHITELIST;
 
+    @Config.Name("Curable")
+    @Config.Comment("If the potion effect should be curable by milk")
+    public static boolean isCurable = false;
+
     @Config.Name("Render In HUD")
     @Config.Comment("If the potion effect should be displayed in the player's ingame HUD")
     public static boolean shouldRenderHUD = true;

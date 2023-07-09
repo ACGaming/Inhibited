@@ -1,7 +1,11 @@
 package mod.acgaming.inhibited;
 
+import java.util.Collections;
+import java.util.List;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
+import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ResourceLocation;
@@ -49,5 +53,11 @@ public class InhibitedPotion extends Potion
     {
         Minecraft.getMinecraft().renderEngine.bindTexture(INHIBITED_ICON);
         Gui.drawModalRectWithCustomSizedTexture(x + 3, y + 3, 0, 0, 18, 18, 18, 18);
+    }
+
+    @Override
+    public List<ItemStack> getCurativeItems()
+    {
+        return InhibitedConfig.isCurable ? super.getCurativeItems() : Collections.emptyList();
     }
 }
