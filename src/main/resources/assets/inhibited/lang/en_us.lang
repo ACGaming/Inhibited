@@ -1,1 +1,2 @@
 effect.inhibited.inhibited=Inhibited
+effect.inhibited.inhibited.0.desc=Players are effectively in Adventure Mode. They cannot place and break blocks, unless specified in the config.
