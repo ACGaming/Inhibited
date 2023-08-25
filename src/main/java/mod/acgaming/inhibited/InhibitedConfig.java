@@ -55,6 +55,10 @@ public class InhibitedConfig
     @Config.Comment("If the potion effect should be displayed in the player's inventory")
     public static boolean shouldRenderInv = true;
 
+    @Config.Name("Display Status Message")
+    @Config.Comment("If an Inhibited status message should be displayed in the action bar")
+    public static boolean shouldDisplayMsg = true;
+
     public enum EnumLists
     {
         WHITELIST,

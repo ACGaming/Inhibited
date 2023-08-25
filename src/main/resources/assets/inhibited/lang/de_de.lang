@@ -1,2 +1,3 @@
-effect.inhibited.inhibited=Gehindert
+effect.inhibited.inhibited=Gehemmt
 effect.inhibited.inhibited.0.desc=Spieler befinden sich effektiv im Abenteuermodus. Sie können keine Blöcke platzieren und abbauen, außer es ist so konfiguriert.
+message.inhibited.inhibited=Deine Fähigkeiten sind gehemmt!

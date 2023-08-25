@@ -9,6 +9,7 @@ import net.minecraft.item.Item;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -91,6 +92,8 @@ public class InhibitedLogic
 
         player.capabilities.allowEdit = false;
 
+        if (InhibitedConfig.shouldDisplayMsg) player.sendStatusMessage(new TextComponentTranslation("message.inhibited.inhibited"), true);
+
         event.setUseBlock(Event.Result.DENY);
         event.setUseItem(Event.Result.DENY);
         event.setCanceled(true);
@@ -123,5 +126,7 @@ public class InhibitedLogic
         }
 
         player.capabilities.allowEdit = false;
+
+        if (InhibitedConfig.shouldDisplayMsg) player.sendStatusMessage(new TextComponentTranslation("message.inhibited.inhibited"), true);
     }
 }
